@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` ${poppins.className} antialiased w-full bg-stone-100`}
+        className={` ${poppins.className} antialiased w-full`}
       >
         {children}
       </body>

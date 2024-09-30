@@ -1,14 +1,27 @@
+"use client"
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+    const [scrolltriger, setscrolltriger] = useState(false);
+
+    window.addEventListener('scroll', () => {
+    console.log(window.scrollY)
+    if(window.scrollY >= 88){
+      setscrolltriger = true;
+    }else{
+    
+    }
+    });
+
   return (
     <>
       <nav className="w-full h-auto z-20 top-0 py-3 fixed">
         <div className="items-center flex justify-center">
 
           <div className="md:block hidden">
-            <ul className="inline-flex p-1 gap-3 text-white items-center  bg-neutral-600 rounded-full border">
-              <a href="" className="bg-neutral-900 font-medium rounded-full p-1.5 px-3  "><li>
+            <ul className="inline-flex p-1 gap-3 text-white items-center  bg-neutral-900 rounded-full border">
+              <a href="" className="bg-neutral-600 font-medium rounded-full p-1.5 px-3  "><li>
                 Jurnal
               </li></a>
               <a href="" className=" font-medium rounded-full p-1.5 px-3  "><li>
@@ -19,6 +32,13 @@ export default function Home() {
               </li></a>
               <a href="" className=" font-medium rounded-full p-1.5 px-3  "><li>
                 Jurnal
+              </li></a>
+              <a href="" className="border flex items-center w-full overflow-hidden transition-all gap-2 border-neutral-600 font-medium rounded-full p-1.5 px-3  ">
+                <div className="w-[0.45rem] h-[0.45rem] rounded-full bg-green-400">
+
+                </div>
+              <li>
+                Contact
               </li></a>
             </ul>
           </div>
@@ -34,7 +54,7 @@ export default function Home() {
               Yasyean
             </a>
 
-            <a className="p-2.5 md:block hidden bg-blue-700 text-white  font-medium rounded-full px-4 " href="">
+            <a className="p-2.5 md:block hidden border text-purple-600 shadow-sm  font-medium rounded-full px-4 " href="">
               Contact me?
             </a>
             <div className="w-[28px] h-[20px] md:hidden   relative cursor-pointer inline-block">
@@ -52,10 +72,15 @@ export default function Home() {
             <p className=" text-stone-600 pe-22">Based in Indonesian as Vocational school graduates majoring in Software Engineering who have interests and talents in the field of
               programming or in the field related to computers with communication experience</p>
           </div>
-          <Image src={'/header/profile/Desain tanpa judul (1).svg'} alt=""   width={100} height={100}></Image>
         </header>
+        <div className=" mt-20  rounded-b-[50%] relative ">
+        <Image src={'/header/profile/Desain tanpa judul (1).svg'} alt=""  style={{boxShadow: 'inset 0px 0px 10px 20px white'}} className={"w-[70%] mx-auto  h-full"}  width={100} height={100}></Image>
+        </div>
       </main>
     </>
 
   );
+
+
+
 }
