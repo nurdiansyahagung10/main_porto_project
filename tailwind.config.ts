@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      scale: {
+        '60': '.6',
+        // Add other custom scale values if needed
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
