@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { FreeMode, Autoplay, Pagination } from 'swiper/modules';
+import { FreeMode, Autoplay } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/autoplay'; // Ensure you import the CSS for autoplayimport 'swiper/css';
