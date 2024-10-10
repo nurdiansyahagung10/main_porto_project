@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image";
-import {  useState } from "react";
+import { useEffect, useState } from "react";
 import SectionHeader from "./SectionHeader";
 import SectionProject from "./SectionProject";
 import SectionAbout from "./SectionAbout";
@@ -10,13 +10,22 @@ import SectionCapability from "./SectionCapability";
 export default function Home() {
   const [scrolltriger, setscrolltriger] = useState(false);
 
-  window.addEventListener('scroll', () => {
-    if (window.scrollY >= 88) {
-      setscrolltriger(true);
-    } else {
-      setscrolltriger(false);
-    }
-  });
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= 88) {
+        setscrolltriger(true);
+      } else {
+        setscrolltriger(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <>
