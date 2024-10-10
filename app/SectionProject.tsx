@@ -16,7 +16,7 @@ const SectionProject = () => {
         <h1 className="font-semibold lg:text-6xl md:text-5xl text-4xl mb-10">Pixel Design Work</h1>
 
         <p className="text-stone-600 pe-22 md:w-[50%]">
-          Lets sneak a peek at the project where I've transformed it into a new solution with my design approach.
+          Lets sneak a peek at the project where Ive transformed it into a new solution with my design approach.
         </p>      </div>
 
       <div className="grid md:grid-cols-2 grid-cols-1">
