@@ -5,6 +5,9 @@ import SectionHeader from "./SectionHeader";
 import SectionProject from "./SectionProject";
 import SectionAbout from "./SectionAbout";
 import SectionCapability from "./SectionCapability";
+import SectionChat from "./SectionChat";
+import SectionContactUs from "./SectionContactUs";
+import SectionFooter from "./SectionFooter";
 
 
 export default function Home() {
@@ -54,7 +57,7 @@ export default function Home() {
       <nav className="w-full  h-auto z-20 top-0 py-3.5 fixed">
         <div className="items-center flex justify-center">
           <div className="md:block hidden">
-            <ul className={`inline-flex w-[21.6rem] transition-all duration-500 overflow-hidden p-1 gap-3 text-white items-center  bg-neutral-950 rounded-full shadow-lg  ${scrolltriger === true ? '!w-[calc(100%-0.1px)] shadow-lg' : ''} `}>
+            <ul className={`inline-flex w-[21.6rem] transition-all duration-500 overflow-hidden p-1 gap-3 text-white items-center  bg-black rounded-full shadow-lg  ${scrolltriger === true ? '!w-[calc(100%-0.1px)] shadow-lg' : ''} `}>
               <a href="" className="bg-neutral-700 font-medium rounded-full p-1.5 px-3  "><li>
                 Jurnal
               </li></a>
@@ -79,27 +82,39 @@ export default function Home() {
         </div>
       </nav>
 
+      <nav className=" md:hidden px-3 container mx-auto sticky top-0 pt-3  z-20">
+        <div className="items-center w-full  rounded-xl border  px-3  h-auto  py-3  bg-white flex justify-between">
+          <a href="" className="font-medium ">
+            Yasyean
+          </a>
+
+          <div className="w-[28px] h-[20px] relative cursor-pointer inline-block">
+            <span className="rounded-full bg-black w-full h-[3px] duration-500  absolute top-0 left-0 qubic" style={{ transition: ' .3s cubic-bezier(.8, .5, .2, 1.4)' }}></span>
+            <span className="rounded-full bg-black w-full h-[3px] duration-500  absolute top-[8px] left-0 placeholder-opacity-100" style={{ transition: ' .3s cubic-bezier(.8, .5, .2, 1.4)' }}></span>
+            <span className="rounded-full bg-black w-full h-[3px] duration-500  absolute bottom-0 left-0" style={{ transition: ' .3s cubic-bezier(.8, .5, .2, 1.4)' }}></span>
+          </div>
+        </div>
+      </nav>
+
 
       <main className={' w-full  mx-auto px-3 relative container'}>
 
-        <nav className=" md:relative sticky top-0 pt-3 md:pt-0.5 z-20">
-          <div className="items-center w-full  rounded-xl md:border-none border md:px-0 px-3  h-auto  py-3  md:bg-transparent bg-white flex justify-between">
+      <header className="mb-14">
+      <nav className=" hidden md:block relative pt-0.5 z-20">
+          <div className="items-center w-full  rounded-xl md:border-none border px-0  h-auto  py-3  bg-transparent  flex justify-between">
             <a href="" className="font-medium ">
               Yasyean
             </a>
 
-            <a className="p-2.5 md:block bg-white hidden border text-purple-600 shadow  font-medium rounded-full px-4 " href="">
+            <a className="p-2.5 block bg-white  border text-purple-600 shadow  font-medium rounded-full px-4 " href="">
               Contact me?
             </a>
-            <div className="w-[28px] h-[20px] md:hidden   relative cursor-pointer inline-block">
-              <span className="rounded-full bg-black w-full h-[3px] duration-500  absolute top-0 left-0 qubic" style={{ transition: ' .3s cubic-bezier(.8, .5, .2, 1.4)' }}></span>
-              <span className="rounded-full bg-black w-full h-[3px] duration-500  absolute top-[8px] left-0 placeholder-opacity-100" style={{ transition: ' .3s cubic-bezier(.8, .5, .2, 1.4)' }}></span>
-              <span className="rounded-full bg-black w-full h-[3px] duration-500  absolute bottom-0 left-0" style={{ transition: ' .3s cubic-bezier(.8, .5, .2, 1.4)' }}></span>
-            </div>
           </div>
         </nav>
 
         <SectionHeader />
+
+      </header>
 
         <main className="bg-white">
           <div className=" bg-white flex justify-center overflow-hidden rounded-b-[50%] relative" >
@@ -118,17 +133,28 @@ export default function Home() {
 
           <SectionProject />
 
-
-
+          
         </main>
 
-        <div className="w-full relative px-3 mt-20 py-10">
-          <SectionCapability />
+
+      </main >
+      <div className="bg-[#f8fafb]">
+        <div className="w-full mx-auto container  relative px-3 mt-20 pb-16 py-10">
+          <SectionChat />
 
         </div>
 
-      </main >
-      <footer className="mt-20 ">
+      </div>
+      <div className="w-full mx-auto container relative px-3 mt-20  py-10">
+        <SectionCapability />
+
+        <SectionContactUs />
+      </div>
+
+      <footer className="bg-black ">
+        <div className="w-full mx-auto container  relative px-3 mt-20 pb-10 py-10">
+          <SectionFooter />
+        </div>
       </footer>
 
     </>
