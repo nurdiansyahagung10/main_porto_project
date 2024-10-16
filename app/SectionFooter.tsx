@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Background from '../components/Background';
 
 const SectionFooter = () => {
     return (
@@ -101,8 +102,9 @@ const SectionFooter = () => {
                 </div>
 
             </div>
-            <div className="group my-10">
-                <div className="w-full overflow-hidden h-80 transition-all relative rounded-xl duration-300 group-hover:rotate-x-60 bg-white">
+            <div className=" my-10">
+                <div className="w-full overflow-hidden h-80  relative rounded-xl  bg-white">
+                <Background  />
                 </div>
             </div>
             <div >
