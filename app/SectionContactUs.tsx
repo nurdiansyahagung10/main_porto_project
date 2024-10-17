@@ -15,7 +15,7 @@ const SectionContactUs = () => {
             </div>
 
             <div className="border rounded-2xl bg-[#f5f5f5]">
-                <div className=" mx-auto p-5">
+                <div className=" mx-auto md:p-5 p-2">
                     <div className="grid grid-cols-1 py-10 lg:grid-cols-12 border rounded-2xl shadow-lg bg-white">
                         <div className=" md:col-span-4 border-r border-dashed px-10 text-black">
                             <h3 className="text-4xl sm:text-4xl leading-normal font-medium tracking-tight">
