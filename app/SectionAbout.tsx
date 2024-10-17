@@ -17,7 +17,7 @@ const SectionAbout = () => {
         <p className="text-stone-600 pe-22 md:w-[75%] lg:w-[50%]">With a well-structured workflow and dedicated expert execution, we consistently deliver outstanding design results.</p>
       </div>
 
-      <div className="grid md:grid-cols-3 grid-cols-1">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1">
         <div className="md:border-r md:mb-0 mb-10  border-dashed md:p-7">
           <div className="border md:p-3 p-2 rounded-3xl">
             <div className="bg-white w-full h-auto">
@@ -45,7 +45,7 @@ const SectionAbout = () => {
 
 
 
-        <div className="md:border-r md:mb-0 mb-10  border-dashed md:p-7">
+        <div className="lg:border-r md:mb-0 mb-10  border-dashed md:p-7">
           <div className="border md:p-3 p-2 rounded-3xl">
             <div className="bg-white w-full h-auto">
               <Image
@@ -69,7 +69,7 @@ const SectionAbout = () => {
           </div>
         </div>
 
-        <div className=" mb-10 md:mb-0 border-dashed md:p-7">
+        <div className=" mb-10 md:mb-0 md:col-span-2 lg:col-span-1 md:p-7">
           <div className="border md:p-3 p-2 rounded-3xl">
             <div className="bg-white w-full h-auto">
               <Image

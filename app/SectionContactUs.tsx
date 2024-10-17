@@ -20,12 +20,12 @@ const SectionContactUs = () => {
                     <div className="grid grid-cols-1 py-10 lg:grid-cols-12 border rounded-2xl shadow-lg bg-white">
                         <div className=" md:col-span-4 border-r border-dashed px-10 text-black">
                             <h3 className="text-4xl sm:text-4xl leading-normal font-medium tracking-tight">
-                            Let’s Talk!
+                            Lets Talk!
                             </h3>
                             <p className="mt-4  text-stone-600">
                                 Does your project not fit into the plan mentioned above? We can work out a custom solution to your needs and requests.
 
-                                Whether it's adjusting timelines or refining project scope, I'm here to ensure your vision is brought to life seamlessly.                            </p>
+                                Whether its adjusting timelines or refining project scope, Im here to ensure your vision is brought to life seamlessly.                            </p>
 
                             <div className="flex items-center ">
                                 
@@ -33,7 +33,7 @@ const SectionContactUs = () => {
 
                         </div>
 
-                        <form className="md:col-span-8 flex flex-col  px-10">
+                        <form className="md:col-span-8 md:mt-0 mt-5 flex flex-col  px-10">
         
                             <div className="flex flex-wrap -mx-3 mb-6">
                                 <div className="w-full px-3">

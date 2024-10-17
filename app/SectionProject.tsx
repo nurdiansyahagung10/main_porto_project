@@ -20,7 +20,7 @@ const SectionProject = () => {
         </p>      </div>
 
       <div className="grid md:grid-cols-2 grid-cols-1">
-        <div className="border-r border-b border-dashed p-3 md:p-7">
+        <div className="border-r border-b border-dashed rounded-br-xl md:rounded-none p-3 md:p-7">
           <div className="border md:p-3 p-2 rounded-3xl">
             <div className="bg-white w-full h-auto">
               <Image
@@ -54,7 +54,7 @@ const SectionProject = () => {
             <p className="text-stone-600 md:w-[70%]">We design Websites and Landing pages to meet any business solution and challenge.</p>
           </div>
         </div>
-        <div className=" md:border-l-0 border-l border-b border-dashed p-3 md:p-7">
+        <div className=" md:border-l-0 rounded-bl-xl md:rounded-none border-l border-b border-dashed p-3 md:p-7">
           <div className="border md:p-3 p-2 rounded-3xl">
             <Image
               src={'/header/profile/b1oysJMBAcwj6oXLrF6f191BmU.avif'}
@@ -85,7 +85,7 @@ const SectionProject = () => {
             <p className="text-stone-600 md:w-[70%]">We design Websites and Landing pages to meet any business solution and challenge.</p>
           </div>
         </div>
-        <div className="border-r  border-dashed p-3 md:p-7">
+        <div className="border-r border-b rounded-br-xl md:rounded-none  border-dashed p-3 md:p-7">
           <div className="border md:p-3 p-2 rounded-3xl">
             <div className="bg-white w-full h-auto">
               <Image
