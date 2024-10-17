@@ -26,7 +26,7 @@ export default function Home() {
     };
   }, []);
 
-  const navshow = (e: any) => {
+  const navshow = () => {
     document.getElementById('offcanvas')?.classList.toggle('invisible');
     document.getElementById('offcanvas')?.classList.toggle('!opacity-100');
     document.getElementById('backdrop')?.classList.toggle('invisible');
@@ -91,7 +91,7 @@ export default function Home() {
             Yasyean
           </a>
 
-          <button onClick={(e) => { navshow(e) }} className="w-[28px] h-[20px] relative cursor-pointer inline-block">
+          <button onClick={navshow} className="w-[28px] h-[20px] relative cursor-pointer inline-block">
             <span className="rounded-full bg-black w-full h-[3px] duration-500  absolute top-0 left-0 qubic" style={{ transition: ' .3s cubic-bezier(.8, .5, .2, 1.4)' }}></span>
             <span className="rounded-full bg-black w-full h-[3px] duration-500  absolute top-[8px] left-0 placeholder-opacity-100" style={{ transition: ' .3s cubic-bezier(.8, .5, .2, 1.4)' }}></span>
             <span className="rounded-full bg-black w-full h-[3px] duration-500  absolute bottom-0 left-0" style={{ transition: ' .3s cubic-bezier(.8, .5, .2, 1.4)' }}></span>
@@ -105,7 +105,7 @@ export default function Home() {
           <div className="w-full  ">
             <div className="py-3 border-b flex justify-between mt-3 text-lg items-center  gap-2 w-full bg-white   font-medium  px-3 " >
               Yasyean
-              <button onClick={(e)=> {navshow(e)}}>
+              <button onClick={navshow}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-5">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15M12 9l-3 3m0 0 3 3m-3-3h12.75" />
                 </svg>
@@ -114,7 +114,7 @@ export default function Home() {
           </div>
 
           <ul className=" w-full">
-            <a href="#about" className="w-full " onClick={(e)=> {navshow(e)}}>
+            <a href="#about" className="w-full " onClick={navshow}>
               <button className="py-3 mt-4 items-center flex hover:border hover:text-purple-600 transiition-all duration-200 hover:bg-[#f8fafb] gap-2 w-full bg-white text-stone-600  font-medium rounded-xl px-4 " >
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" className="size-4">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
@@ -122,7 +122,7 @@ export default function Home() {
                 About
               </button>
             </a>
-            <a href="" className="w-full " onClick={(e)=> {navshow(e)}}>
+            <a href="" className="w-full " onClick={navshow}>
               <button className="py-3 mt-4 items-center flex hover:border hover:text-purple-600 transiition-all duration-200 hover:bg-[#f8fafb] gap-2 w-full bg-white text-stone-600  font-medium rounded-xl px-4 " >
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" className="size-4">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
@@ -130,7 +130,7 @@ export default function Home() {
                 Project
               </button>
             </a>
-            <a href="" className="w-full " onClick={(e)=> {navshow(e)}}>
+            <a href="" className="w-full " onClick={navshow}>
               <button className="py-3 mt-4 items-center flex hover:border hover:text-purple-600 transiition-all duration-200 hover:bg-[#f8fafb] gap-2 w-full bg-white text-stone-600  font-medium rounded-xl px-4 " >
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" className="size-4">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
@@ -138,7 +138,7 @@ export default function Home() {
                 Discover
               </button>
             </a>
-            <a href="" className="w-full " onClick={(e)=> {navshow(e)}}>
+            <a href="" className="w-full " onClick={navshow}>
               <button className="py-3 mt-4 items-center flex hover:border hover:text-purple-600 transiition-all duration-200 hover:bg-[#f8fafb] gap-2 w-full bg-white text-stone-600  font-medium rounded-xl px-4 " >
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" className="size-4">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
@@ -146,7 +146,7 @@ export default function Home() {
                 Discover
               </button>
             </a>
-            <a href="" className="w-full " onClick={(e)=> {navshow(e)}}>
+            <a href="" className="w-full " onClick={navshow}>
               <button className="py-3 mt-4 items-center flex hover:border hover:text-purple-600 transiition-all duration-200 hover:bg-[#f8fafb] gap-2 w-full bg-white text-stone-600  font-medium rounded-xl px-4 " >
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" className="size-4">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
