@@ -19,7 +19,7 @@ const SectionContactUs = () => {
                     <div className="grid grid-cols-1 py-10 lg:grid-cols-12 border rounded-2xl shadow-lg bg-white">
                         <div className=" md:col-span-4 border-r border-dashed px-10 text-black">
                             <h3 className="text-4xl sm:text-4xl leading-normal font-medium tracking-tight">
-                            Say Hi to Me
+                            Say Hi to Me 
                             </h3>
                             <p className="mt-4  text-stone-600">
                                 Does your project not fit into the plan mentioned above? We can work out a custom solution to your needs and requests.

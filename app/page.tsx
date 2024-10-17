@@ -37,7 +37,7 @@ export default function Home() {
     <>
       <div className="absolute inset-0 -z-10 mx-0 max-w-none overflow-hidden">
         <div
-          className="absolute left-1/2 scale-125 top-0 ml-[-38rem] h-[25rem] w-[81.25rem]">
+          className="absolute left-1/2 scale-110 top-0 ml-[-38rem] h-[25rem] w-[81.25rem]">
           <div
             className="absolute inset-0 opacity-45 [mask-image:radial-gradient(farthest-side_at_top,white,transparent)]">
             <svg aria-hidden="true"
@@ -47,11 +47,7 @@ export default function Home() {
                   <path d="M.5 56V.5H72" fill="none"></path>
                 </pattern>
               </defs>
-              <rect width="100%" height="100%" stroke-width="0" fill="url(#:S1:)"></rect><svg x="-12" y="4"
-                className="overflow-visible">
-                <rect stroke-width="0" width="73" height="57" x="288" y="168"></rect>
-                <rect stroke-width="0" width="73" height="57" x="144" y="56"></rect>
-              </svg>
+              <rect width="100%" height="100%" stroke-width="0" fill="url(#:S1:)"></rect>
             </svg>
           </div>
         </div>
@@ -146,7 +142,7 @@ export default function Home() {
                 Cavability
               </button>
             </a>
-            <a href="#Contact" className="w-full " onClick={navshow}>
+            <a href="#contact" className="w-full " onClick={navshow}>
               <button className="py-3 mt-4 flex items-center justify-between hover:border hover:text-purple-600 transiition-all duration-200 hover:bg-[#f8fafb] gap-2 w-full bg-white text-stone-600  font-medium rounded-xl px-4 " >
                 <div className="flex gap-2 items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" className="size-4">
@@ -164,12 +160,12 @@ export default function Home() {
         </div>
       </div>
 
-      <main className={' w-full  mx-auto px-6 relative container'}>
+      <main className={' w-full   mx-auto px-6 relative container'}>
 
         <header className="md:mb-14 mb-12">
           <nav className=" hidden md:block relative pt-0.5 z-20">
             <div className="items-center w-full  rounded-xl md:border-none border px-0  h-auto  py-3  bg-transparent  flex justify-between">
-              <a href="" className="font-medium ">
+              <a href="" className="font-medium text-lg ">
                 Yasyean
               </a>
 
@@ -212,7 +208,7 @@ export default function Home() {
 
       </main >
       <div className="bg-[#f8fafb]" id="timeline">
-        <div className="w-full mx-auto container  relative px-3 mt-20 pb-16 py-10">
+        <div className="w-full mx-auto container  relative px-6 mt-20 pb-16 py-10">
           {/* timeline section */}
           <SectionTimeline />
         </div>
@@ -220,7 +216,7 @@ export default function Home() {
       </div>
 
       <div id="capability"></div>
-      <div className="w-full mx-auto container relative px-3 mt-20  py-10" >
+      <div className="w-full mx-auto container relative px-6 mt-20  py-10" >
         {/* cabapibility section */}
         <SectionCapability />
 
@@ -231,7 +227,7 @@ export default function Home() {
       </div>
 
       <footer className="bg-black ">
-        <div className="w-full mx-auto container  relative px-3 mt-10 pb-10 py-10">
+        <div className="w-full mx-auto container  relative px-6 mt-10 pb-10 py-10">
           {/* footer section */}
           <SectionFooter />
         </div>

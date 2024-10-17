@@ -6,7 +6,7 @@ const SectionFooter = () => {
             <div className="mb-20 mt-10 grid text-white gap-6 md:grid-cols-2 grid-cols-1">
                 <div className="flex flex-col gap-6">
                     <div className="rounded-xl md:px-8 pb-3 ">
-                        <h2 className="md:text-xl text-lg">—Testimonial</h2>
+                        <h2 className="md:text-xl font-medium text-lg">—Testimonial</h2>
                         <h1 className="lg:text-6xl md:text-5xl text-4xl mt-7 font-medium">What they said about us from the people we shared experiences with.</h1>
                     </div>
                     <div className="rounded-xl p-8 flex-grow bg-stone-900">
