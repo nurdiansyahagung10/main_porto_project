@@ -83,7 +83,7 @@ export default function Home() {
       </nav>
 
       <nav className=" md:hidden px-3 container mx-auto sticky top-0 pt-3  z-20">
-        <div className="items-center w-full  rounded-xl border  px-3  h-auto  py-3  bg-white flex justify-between">
+        <div className="items-center w-full shadow-lg  rounded-xl border  px-3  h-auto  py-3  bg-white flex justify-between">
           <a href="" className="font-medium ">
             Yasyean
           </a>
@@ -152,7 +152,7 @@ export default function Home() {
       </div>
 
       <footer className="bg-black ">
-        <div className="w-full mx-auto container  relative px-3 mt-20 pb-10 py-10">
+        <div className="w-full mx-auto container  relative px-3 mt-10 pb-10 py-10">
           <SectionFooter />
         </div>
       </footer>
