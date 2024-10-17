@@ -99,7 +99,7 @@ export default function Home() {
 
       <main className={' w-full  mx-auto px-3 relative container'}>
 
-      <header className="mb-14">
+      <header className="md:mb-14 mb-10">
       <nav className=" hidden md:block relative pt-0.5 z-20">
           <div className="items-center w-full  rounded-xl md:border-none border px-0  h-auto  py-3  bg-transparent  flex justify-between">
             <a href="" className="font-medium ">
@@ -121,7 +121,7 @@ export default function Home() {
             <Image
               src={'/header/profile/Trending feeds (3).svg'}
               alt=""
-              className="w-full max-w-[80%] min-w-[22rem] translate-y-1 aspect-video border md:rounded-3xl rounded-xl mx-auto h-full"
+              className="w-full max-w-[80%] min-w-[24rem] translate-y-1 aspect-video border md:rounded-3xl rounded-xl mx-auto h-full"
               width={100}
               height={100}
             />
