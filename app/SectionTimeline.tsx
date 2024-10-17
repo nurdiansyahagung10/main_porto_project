@@ -1,6 +1,6 @@
 
 
-const SectionChat = () => {
+const SectionTimeline = () => {
     return (
 
         <>
@@ -60,4 +60,4 @@ const SectionChat = () => {
     );
 }
 
-export default SectionChat;
+export default SectionTimeline;

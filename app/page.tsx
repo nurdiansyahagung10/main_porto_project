@@ -5,7 +5,7 @@ import SectionHeader from "./SectionHeader";
 import SectionProject from "./SectionProject";
 import SectionAbout from "./SectionAbout";
 import SectionCapability from "./SectionCapability";
-import SectionChat from "./SectionChat";
+import SectionChat from "./SectionTimeline";
 import SectionContactUs from "./SectionContactUs";
 import SectionFooter from "./SectionFooter";
 
@@ -99,7 +99,7 @@ export default function Home() {
 
       <main className={' w-full  mx-auto px-3 relative container'}>
 
-      <header className="md:mb-14 mb-10">
+      <header className="md:mb-14 mb-12">
       <nav className=" hidden md:block relative pt-0.5 z-20">
           <div className="items-center w-full  rounded-xl md:border-none border px-0  h-auto  py-3  bg-transparent  flex justify-between">
             <a href="" className="font-medium ">
