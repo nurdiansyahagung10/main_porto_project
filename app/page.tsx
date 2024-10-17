@@ -100,7 +100,7 @@ export default function Home() {
       </nav>
 
       <div id="backdrop" className="bg-black/20 invisible opacity-0 fixed top-0 left-0 right-0 bottom-0 z-20 transition-all duration-300"></div>
-      <div id="offcanvas" className="bg-white w-3/5  invisible opacity-0 fixed top-0 left-0 right-0 bottom-0 z-30 transition-all duration-300">
+      <div id="offcanvas" className="bg-white w-3/4 sm:w-3/5  invisible opacity-0 fixed top-0 left-0 right-0 bottom-0 z-30 transition-all duration-300">
         <div className=" px-4 container w-full mx-auto">
           <div className="w-full  ">
             <div className="py-3 border-b flex justify-between mt-3 text-lg items-center  gap-2 w-full bg-white   font-medium  px-3 " >
@@ -122,7 +122,7 @@ export default function Home() {
                 About
               </button>
             </a>
-            <a href="" className="w-full " onClick={navshow}>
+            <a href="#project" className="w-full " onClick={navshow}>
               <button className="py-3 mt-4 items-center flex hover:border hover:text-purple-600 transiition-all duration-200 hover:bg-[#f8fafb] gap-2 w-full bg-white text-stone-600  font-medium rounded-xl px-4 " >
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" className="size-4">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
@@ -130,28 +130,34 @@ export default function Home() {
                 Project
               </button>
             </a>
-            <a href="" className="w-full " onClick={navshow}>
+            <a href="#timeline" className="w-full " onClick={navshow}>
               <button className="py-3 mt-4 items-center flex hover:border hover:text-purple-600 transiition-all duration-200 hover:bg-[#f8fafb] gap-2 w-full bg-white text-stone-600  font-medium rounded-xl px-4 " >
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" className="size-4">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
                 </svg>
-                Discover
+                Timeline
               </button>
             </a>
-            <a href="" className="w-full " onClick={navshow}>
+            <a href="#capability" className="w-full " onClick={navshow}>
               <button className="py-3 mt-4 items-center flex hover:border hover:text-purple-600 transiition-all duration-200 hover:bg-[#f8fafb] gap-2 w-full bg-white text-stone-600  font-medium rounded-xl px-4 " >
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" className="size-4">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
                 </svg>
-                Discover
+                Cavability
               </button>
             </a>
-            <a href="" className="w-full " onClick={navshow}>
-              <button className="py-3 mt-4 items-center flex hover:border hover:text-purple-600 transiition-all duration-200 hover:bg-[#f8fafb] gap-2 w-full bg-white text-stone-600  font-medium rounded-xl px-4 " >
+            <a href="#Contact" className="w-full " onClick={navshow}>
+              <button className="py-3 mt-4 flex items-center justify-between hover:border hover:text-purple-600 transiition-all duration-200 hover:bg-[#f8fafb] gap-2 w-full bg-white text-stone-600  font-medium rounded-xl px-4 " >
+                <div className="flex gap-2 items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" className="size-4">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
                 </svg>
-                Discover
+                Contact
+
+                </div>
+
+                <div className="w-[0.45rem] h-[0.45rem] rounded-full bg-green-400"></div>
+
               </button>
             </a>
           </ul>
