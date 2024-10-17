@@ -6,13 +6,12 @@ const SectionContactUs = () => {
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" className="size-4">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
                     </svg>
-                    Discover
+                    Contact
                 </button>
             </div>
 
-            <div className="w-full flex flex-col mb-10 items-center text-center">
-                <h1 className="font-semibold lg:text-6xl md:text-5xl text-4xl mb-10">About Me</h1>
-                <p className="text-stone-600 pe-22 md:w-[75%] lg:w-[50%]">With a well-structured workflow and dedicated expert execution, we consistently deliver outstanding design results.</p>
+            <div className="w-full flex flex-col mb-5 items-center text-center">
+                <h1 className="font-semibold lg:text-6xl md:text-5xl text-4xl mb-10">Lets Talk!</h1>
             </div>
 
             <div className="border rounded-2xl bg-[#f5f5f5]">
@@ -20,7 +19,7 @@ const SectionContactUs = () => {
                     <div className="grid grid-cols-1 py-10 lg:grid-cols-12 border rounded-2xl shadow-lg bg-white">
                         <div className=" md:col-span-4 border-r border-dashed px-10 text-black">
                             <h3 className="text-4xl sm:text-4xl leading-normal font-medium tracking-tight">
-                            Lets Talk!
+                            Say Hi to Me
                             </h3>
                             <p className="mt-4  text-stone-600">
                                 Does your project not fit into the plan mentioned above? We can work out a custom solution to your needs and requests.
@@ -33,7 +32,7 @@ const SectionContactUs = () => {
 
                         </div>
 
-                        <form className="md:col-span-8 md:mt-0 mt-5 flex flex-col  px-10">
+                        <form className="md:col-span-8 lg:mt-0 mt-5 flex flex-col  px-10">
         
                             <div className="flex flex-wrap -mx-3 mb-6">
                                 <div className="w-full px-3">
