@@ -85,7 +85,7 @@ const SectionProject = () => {
             <p className="text-stone-600 md:w-[70%]">We design Websites and Landing pages to meet any business solution and challenge.</p>
           </div>
         </div>
-        <div className="border-r border-b rounded-br-xl md:rounded-none  border-dashed p-3 md:p-7">
+        <div className="border-r border-b md:border-b-0 rounded-br-xl md:rounded-none  border-dashed p-3 md:p-7">
           <div className="border md:p-3 p-2 rounded-3xl">
             <div className="bg-white w-full h-auto">
               <Image
