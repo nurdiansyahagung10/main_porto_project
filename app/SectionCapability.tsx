@@ -5,6 +5,7 @@ import 'swiper/css';
 import 'swiper/css/autoplay'; // Ensure you import the CSS for autoplayimport 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
+import TextAos from '@/components/TextAos';
 
 const SectionCapability = () => {
     return (
@@ -31,7 +32,7 @@ const SectionCapability = () => {
             </div>
             <div >
                 <div className="w-full  mb-10 flex justify-center">
-                    <button className="py-1.5 items-center flex gap-1 bg-white  border text-purple-600 shadow  font-medium rounded-xl px-4 " >
+                    <button data-aos='fade-up' data-aos-duration='1100' className="py-1.5 items-center flex gap-1 bg-white  border text-purple-600 shadow  font-medium rounded-xl px-4 " >
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" className="size-4">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
                         </svg>
@@ -40,8 +41,13 @@ const SectionCapability = () => {
                 </div>
 
                 <div className="w-full flex flex-col  items-center text-center">
-                    <h1 className="font-semibold lg:text-6xl md:text-5xl text-4xl mb-10">What iam Do</h1>
-                    <p className="text-stone-600 pe-22 md:w-[75%] lg:w-[50%]">Discover our capabilities. The full list.</p>
+                    <div className="font-semibold inline-flex gap-3 lg:text-6xl md:text-5xl text-4xl mb-10">
+                        <TextAos animate={'fade-up'} duration={'1200'} text={'What'} />
+                        <TextAos animate={'fade-up'} duration={'1300'} text={'iam'} />
+                        <TextAos animate={'fade-up'} duration={'1400'} text={'Do'} />
+                    </div>
+                    <TextAos animate={'fade-up'} duration={'1400'} text={'Discover our capabilities. The full list.'} classname={'text-stone-600 pe-22 md:w-[75%] lg:w-[50%]'} />
+
                 </div>
             </div>
             <div className="pt-10">
@@ -54,6 +60,8 @@ const SectionCapability = () => {
                         delay: 0,
                         disableOnInteraction: false,
                     }}
+                    data-aos='fade-up'
+                    data-aos-duration='1500'
                     speed={2000}
                     modules={[FreeMode, Autoplay]}
                     className="mySwiper pointer-events-none"
@@ -301,6 +309,8 @@ const SectionCapability = () => {
                         disableOnInteraction: false,
                         reverseDirection: true
                     }}
+                    data-aos='fade-up'
+                    data-aos-duration='1600'
                     speed={2000}
                     modules={[FreeMode, Autoplay]}
                     className="mySwiper pointer-events-none"

@@ -8,25 +8,28 @@ import SectionCapability from "./SectionCapability";
 import SectionTimeline from "./SectionTimeline";
 import SectionContactUs from "./SectionContactUs";
 import SectionFooter from "./SectionFooter";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 export default function Home() {
   const [scroll, setscroll] = useState(0);
 
   useEffect(() => {
+    AOS.init();
+
     const handleScroll = () => {
       setscroll(window.scrollY);
     };
 
     window.addEventListener('scroll', handleScroll);
 
-    // Clean up the event listener on component unmount
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
-  console.log(scroll);
+  // console.log(scroll);
   const navshow = () => {
     document.getElementById('offcanvas')?.classList.toggle('invisible');
     document.getElementById('offcanvas')?.classList.toggle('!opacity-100');
@@ -58,16 +61,16 @@ export default function Home() {
         <div className="items-center flex justify-center">
           <div className="md:block hidden">
             <ul className={`inline-flex w-[24.6rem] transition-all duration-500 overflow-hidden p-1 gap-3 text-white items-center  bg-black rounded-full shadow-lg  ${scroll >= 88 ? '!w-[calc(100%-0.1px)] ' : ''} `}>
-              <a href="#about" className={` ${scroll >= 900 && scroll <= 2100 ? 'bg-stone-700 ' : ''} font-medium transition-all duration-500  rounded-full p-1.5 px-3`} ><li>
+              <a href="#about" className={` ${scroll >= 900 && scroll <= 2100 ? 'bg-stone-700 ' : ''} font-medium transition-all duration-500  rounded-full p-1.5 px-3`} data-aos="fade-up" data-aos-duration="1000" ><li>
                 About
               </li></a>
-              <a href="#project" className={` ${scroll >= 2100 && scroll <= 3500 ? 'bg-stone-700 ' : ''} font-medium transition-all duration-500  rounded-full p-1.5 px-3`} ><li>
+              <a href="#project" className={` ${scroll >= 2100 && scroll <= 3500 ? 'bg-stone-700 ' : ''} font-medium transition-all duration-500  rounded-full p-1.5 px-3`} data-aos="fade-up" data-aos-duration="1250" ><li>
                 Project
               </li></a>
-              <a href="#timeline" className={` ${scroll >= 3500 && scroll <= 4800 ? 'bg-stone-700 ' : ''} font-medium transition-all duration-500  rounded-full p-1.5 px-3`} ><li>
+              <a href="#timeline" className={` ${scroll >= 3500 && scroll <= 4800 ? 'bg-stone-700 ' : ''} font-medium transition-all duration-500  rounded-full p-1.5 px-3`} data-aos="fade-up" data-aos-duration="1500" ><li>
                 Timeline
               </li></a>
-              <a href="#capability" className={` ${scroll >= 4800 && scroll <= 5300 ? 'bg-stone-700 ' : ''} font-medium transition-all duration-500  rounded-full p-1.5 px-3`} ><li>
+              <a href="#capability" className={` ${scroll >= 4800 && scroll <= 5300 ? 'bg-stone-700 ' : ''} font-medium transition-all duration-500  rounded-full p-1.5 px-3`} data-aos="fade-up" data-aos-duration="1750" ><li>
                 Capability
               </li></a>
               <a href="#contact" className={"border flex items-center overflow-hidden gap-2 border-neutral-600 font-medium rounded-full p-1.5 px-3 "}>
@@ -146,10 +149,10 @@ export default function Home() {
             <a href="#contact" className="w-full " onClick={navshow}>
               <button className="py-3 mt-4 flex items-center justify-between hover:border hover:text-purple-600 transiition-all duration-200 hover:bg-[#f8fafb] gap-2 w-full bg-white text-stone-600  font-medium rounded-xl px-4 " >
                 <div className="flex gap-2 items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" className="size-4">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
-                </svg>
-                Contact
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" className="size-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+                  </svg>
+                  Contact
 
                 </div>
 
@@ -166,18 +169,18 @@ export default function Home() {
         <header className="md:mb-14 mb-12">
           <nav className=" hidden md:block relative pt-0.5 z-20">
             <div className="items-center w-full  rounded-xl md:border-none border px-0  h-auto  py-3  bg-transparent  flex justify-between">
-              <a href="" className="font-medium text-lg ">
+              <a href="" data-aos="fade-right" data-aos-duration="1000"  className="font-medium text-lg ">
                 Yasyean
               </a>
 
-              <a className="p-2.5 block bg-white  border text-purple-600 shadow  font-medium rounded-full px-4 " href="">
+              <a data-aos="fade-up" data-aos-duration="1750" className="p-2.5 block bg-white  border text-purple-600 shadow  font-medium rounded-full px-4 " href="">
                 Contact me?
               </a>
             </div>
           </nav>
 
           {/* header section */}
-          <SectionHeader />
+          <SectionHeader  />
 
         </header>
 

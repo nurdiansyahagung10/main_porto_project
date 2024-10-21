@@ -1,3 +1,4 @@
+import TextAos from '@/components/TextAos';
 import Background from '../components/Background';
 
 const SectionFooter = () => {
@@ -5,11 +6,26 @@ const SectionFooter = () => {
         <>
             <div className="mb-20 mt-10 grid text-white gap-6 md:grid-cols-2 grid-cols-1">
                 <div className="flex flex-col gap-6">
-                    <div className="rounded-xl md:px-8 pb-3 ">
-                        <h2 className="md:text-xl font-medium text-lg">—Testimonial</h2>
-                        <h1 className="lg:text-6xl md:text-5xl text-4xl mt-7 font-medium">What they said about us from the people we shared experiences with.</h1>
+                    <div className="rounded-xl md:px-8 pb-3 flex-wrap ">
+                        <TextAos animate={'fade-up'} duration={'1000'} text={'—Testimonial'} classname="md:text-xl font-medium text-lg" />
+                        <div className='lg:text-6xl inline-flex gap-3 flex-wrap md:text-5xl text-4xl mt-7 font-medium'>
+                            <TextAos animate={'fade-up'} duration={'1050'} text={'Lets'} />
+                            <TextAos animate={'fade-up'} duration={'1100'} text={'What'} />
+                            <TextAos animate={'fade-up'} duration={'1150'} text={'they'} />
+                            <TextAos animate={'fade-up'} duration={'1200'} text={'said'} />
+                            <TextAos animate={'fade-up'} duration={'1250'} text={'about'} />
+                            <TextAos animate={'fade-up'} duration={'1300'} text={'us'} />
+                            <TextAos animate={'fade-up'} duration={'1350'} text={'from'} />
+                            <TextAos animate={'fade-up'} duration={'1400'} text={'the'} />
+                            <TextAos animate={'fade-up'} duration={'1450'} text={'people'} />
+                            <TextAos animate={'fade-up'} duration={'1500'} text={'we'} />
+                            <TextAos animate={'fade-up'} duration={'1550'} text={'shared'} />
+                            <TextAos animate={'fade-up'} duration={'1600'} text={'experiences'} />
+                            <TextAos animate={'fade-up'} duration={'1650'} text={'with.'} />
+
+                        </div>
                     </div>
-                    <div className="rounded-xl p-8 flex-grow bg-stone-900">
+                    <div data-aos='zoom-in' data-aos-duration='1400' className="rounded-xl p-8 flex-grow bg-stone-900">
                         <div className="flex gap-1 mb-10">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6 text-yellow-500 ">
                                 <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
@@ -27,7 +43,10 @@ const SectionFooter = () => {
                                 <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
                             </svg>
                         </div>
-                        <p className="md:text-xl text-lg">" Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint tenetur temporibus, ullam eveniet ut maiores debitis commodi  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ducimus sapiente voluptatem, necessitatibus repudiandae et sit. Ut, reiciendis ex eveniet sint delectus excepturi doloremque vitae dolor dolore minus sequi consequatur! "</p>
+                        <p className="md:text-xl text-lg">
+                            " Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint tenetur temporibus, ullam eveniet ut maiores debitis commodi  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ducimus sapiente voluptatem, necessitatibus repudiandae et sit. Ut, reiciendis ex eveniet sint delectus excepturi doloremque vitae dolor dolore minus sequi consequatur! "
+                        </p>
+
                         <div className="mt-5 text-lg flex gap-2">
                             <span >
                                 Alpha Chong
@@ -40,7 +59,7 @@ const SectionFooter = () => {
                     </div>
                 </div>
                 <div className="flex flex-col gap-6">
-                    <div className="rounded-xl p-8 bg-stone-900">
+                    <div data-aos='zoom-in' data-aos-duration='1400' className="rounded-xl p-8 bg-stone-900">
                         <div className="flex gap-1 mb-10">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6 text-yellow-500 ">
                                 <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
@@ -58,7 +77,8 @@ const SectionFooter = () => {
                                 <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
                             </svg>
                         </div>
-                        <p className="md:text-xl text-lg">" Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint tenetur temporibus, ullam eveniet ut maiores debitis commodi  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ducimus sapiente voluptatem, necessitatibus repudiandae et sit. Ut, reiciendis ex eveniet sint delectus excepturi doloremque vitae dolor dolore minus sequi consequatur! "</p>
+                        <p className="md:text-xl text-lg">
+                            " Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint tenetur temporibus, ullam eveniet ut maiores debitis commodi  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ducimus sapiente voluptatem, necessitatibus repudiandae et sit. Ut, reiciendis ex eveniet sint delectus excepturi doloremque vitae dolor dolore minus sequi consequatur! "                        </p>
                         <div className="mt-5 text-lg flex gap-2">
                             <span >
                                 Alpha Chong
@@ -69,7 +89,7 @@ const SectionFooter = () => {
 
                         </div>
                     </div>
-                    <div className="rounded-xl p-8 flex-grow bg-stone-900">
+                    <div data-aos='zoom-in' data-aos-duration='1400' className="rounded-xl p-8 flex-grow bg-stone-900">
                         <div className="flex gap-1 mb-10">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6 text-yellow-500 ">
                                 <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
@@ -87,7 +107,9 @@ const SectionFooter = () => {
                                 <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
                             </svg>
                         </div>
-                        <p className="md:text-xl text-lg ">" adipisicing elit. Totam ducimus sapiente voluptatem, necessitatibus repudiandae et sit. Ut, reiciendis ex eveniet sint delectus excepturi doloremque vitae dolor dolore minus sequi consequatur! "</p>
+                        <p className="md:text-xl text-lg">
+                            " Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint tenetur temporibus, ullam eveniet ut maiores debitis commodi  Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ducimus sapiente voluptatem, necessitatibus repudiandae et sit. Ut, reiciendis ex eveniet sint delectus excepturi doloremque vitae dolor dolore minus sequi consequatur! "                        </p>
+
                         <div className="mt-5 text-lg flex gap-2">
                             <span >
                                 Alpha Chong
@@ -102,8 +124,8 @@ const SectionFooter = () => {
 
             </div>
             <div className=" my-10">
-                <div className="w-full overflow-hidden h-80  relative rounded-xl  bg-white">
-                <Background  />
+                <div data-aos='zoom-in' data-aos-duration='1400' className="w-full overflow-hidden h-80  relative rounded-xl  bg-white">
+                    <Background />
                 </div>
             </div>
             <div >

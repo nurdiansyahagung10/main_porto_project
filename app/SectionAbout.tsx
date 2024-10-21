@@ -1,3 +1,4 @@
+import TextAos from "@/components/TextAos";
 import Image from "next/image";
 
 const SectionAbout = () => {
@@ -16,7 +17,7 @@ const SectionAbout = () => {
   return (
     <>
       <div className="w-full mt-20 mb-10 flex justify-center">
-        <button className="py-1.5 items-center flex gap-1 bg-white  border text-purple-600 shadow  font-medium rounded-xl px-4 " >
+        <button data-aos='fade-up' data-aos-duration='1100' className="py-1.5 items-center flex gap-1 bg-white  border text-purple-600 shadow  font-medium rounded-xl px-4 " >
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" className="size-4">
             <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
           </svg>
@@ -25,13 +26,17 @@ const SectionAbout = () => {
       </div>
 
       <div className="w-full flex flex-col mb-10 items-center text-center">
-        <h1 className="font-semibold lg:text-6xl md:text-5xl text-4xl mb-10">About Me</h1>
-        <p className="text-stone-600 pe-22 md:w-[75%] lg:w-[50%]">With a well-structured workflow and dedicated expert execution, we consistently deliver outstanding design results.</p>
+        <div className="font-semibold lg:text-6xl inline-flex gap-3 md:text-5xl text-4xl mb-10">
+          <TextAos animate={'fade-up'} duration={'1200'} text={'About'} />
+          <TextAos animate={'fade-up'} duration={'1300'} text={'Me'} />
+
+        </div>
+        <TextAos animate={'fade-up'} duration={'1400'} text={'With a well-structured workflow and dedicated expert execution, we consistently deliver outstanding design results'} classname={'text-stone-600 pe-22 md:w-[75%] lg:w-[50%]'} />
       </div>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1">
         <div className="md:border-r md:mb-0 mb-10  border-dashed md:p-7">
-          <div className="border md:p-3 p-2 rounded-3xl">
+          <div data-aos="zoom-in" data-aos-duration='1500' className="border md:p-3 p-2 rounded-3xl">
             <div className="bg-white w-full h-auto">
               <Image
                 src={'/header/profile/b1oysJMBAcwj6oXLrF6f191BmU.avif'}
@@ -45,12 +50,15 @@ const SectionAbout = () => {
 
 
           <div className="mt-7 flex items-center justify-between">
-            <h1 className="text-lg font-medium">Education</h1>
+            <h1 className="text-lg font-medium">
+              <TextAos animate={'fade-up'} duration={'1600'} text={'Education'} />
+
+            </h1>
 
 
           </div>
           <div className="mt-4">
-            <p className="text-stone-600 ">Graduate of SMK Wiraswasta Cimahi, majoring in Software Engineering with an average score of 87.3. Focused on programming, database management, and mathematics. Strong understanding of web development and related technologies.</p>
+            <TextAos animate={'fade-up'} duration={'1900'} text={'Graduate of SMK Wiraswasta Cimahi, majoring in Software Engineering with an average score of 87.3. Focused on programming, database management, and mathematics. Strong understanding of web development and related technologies.'} classname={"text-stone-600 "} />
           </div>
         </div>
 
@@ -58,7 +66,7 @@ const SectionAbout = () => {
 
 
         <div className="lg:border-r md:mb-0 mb-10  border-dashed md:p-7">
-          <div className="border md:p-3 p-2 rounded-3xl">
+          <div data-aos="zoom-in" data-aos-duration='1500' className="border md:p-3 p-2 rounded-3xl">
             <div className="bg-white w-full h-auto">
               <Image
                 src={'/header/profile/b1oysJMBAcwj6oXLrF6f191BmU.avif'}
@@ -72,17 +80,19 @@ const SectionAbout = () => {
 
 
           <div className="mt-7 flex items-center justify-between">
-            <h1 className="text-lg font-medium">Personality</h1>
+            <h1 className="text-lg font-medium">
+              <TextAos animate={'fade-up'} duration={'1700'} text={'Personality'} />
+            </h1>
 
 
           </div>
           <div className="mt-4">
-            <p className="text-stone-600 ">A determined and responsible individual who takes full ownership of every task. Able to work under pressure and quick to learn new things. Good communication skills and a team player, always striving to deliver the best results in every project.</p>
+            <TextAos animate={'fade-up'} duration={'2000'} text={'A determined and responsible individual who takes full ownership of every task. Able to work under pressure and quick to learn new things. Good communication skills and a team player, always striving to deliver the best results in every project.'} classname={"text-stone-600 "} />
           </div>
         </div>
 
         <div className=" mb-10 md:mb-0 md:col-span-2 lg:col-span-1 md:p-7">
-          <div className="border md:p-3 p-2 rounded-3xl">
+          <div data-aos="zoom-in" data-aos-duration='1500' className="border md:p-3 p-2 rounded-3xl">
             <div className="bg-white w-full h-auto">
               <Image
                 src={'/header/profile/b1oysJMBAcwj6oXLrF6f191BmU.avif'}
@@ -96,12 +106,16 @@ const SectionAbout = () => {
 
 
           <div className="mt-7 flex items-center justify-between">
-            <h1 className="text-lg font-medium">Skills</h1>
+
+            <h1 className="text-lg font-medium">
+              <TextAos animate={'fade-up'} duration={'1800'} text={'Skills'} />
+            </h1>
 
 
           </div>
           <div className="mt-4">
-            <p className="text-stone-600 ">Proficient in various programming languages such as JavaScript, PHP, Python, SQL, and C++. Skilled in software like Word, Excel, Adobe Illustrator, and Canva. A fast learner, detail-oriented, and a problem solver.</p>
+            <TextAos animate={'fade-up'} duration={'2100'} text={'Proficient in various programming languages such as JavaScript, PHP, Python, SQL, and C++. Skilled in software like Word, Excel, Adobe Illustrator, and Canva. A fast learner, detail-oriented, and a problem solver.'} classname={"text-stone-600 "} />
+
           </div>
         </div>
       </div>
@@ -111,12 +125,19 @@ const SectionAbout = () => {
 
 
       <div className="bg-white md:p-6 border-t border-dashed md:mt-10">
-        <h3 className="text-lg font-medium mt-5 text-gray-800">Other about me, you can know</h3>
-        <p className="text-stone-600 ">We design Websites and Landing pages to meet any business solution and challenge.</p>
+        <div className="text-lg font-medium mt-5 inline-flex gap-1 text-gray-800">
+          <TextAos animate={'fade-up'} duration={'1600'} text={'Other'} />
+          <TextAos animate={'fade-up'} duration={'1700'} text={'about'} />
+          <TextAos animate={'fade-up'} duration={'1800'} text={'me,'} />
+          <TextAos animate={'fade-up'} duration={'1900'} text={'you'} />
+          <TextAos animate={'fade-up'} duration={'2000'} text={'can'} />
+          <TextAos animate={'fade-up'} duration={'2100'} text={'know'} />
+        </div>
+        <TextAos animate={'fade-up'} duration={'2100'} text={'We design Websites and Landing pages to meet any business solution and challenge.'} classname={"text-stone-600 "} />
 
         <div className="h-1 w-full mx-auto  my-5"></div>
 
-        <div className=" border rounded-xl mb-5">
+        <div data-aos="fade-right" data-aos-duration='1800' className="transition border rounded-xl mb-5">
 
           <button onClick={(e) => { accordionshow(e) }} className="accordion-header w-full cursor-pointer transition flex space-x-5 px-5 items-center h-16">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" className="size-6">
@@ -132,7 +153,7 @@ const SectionAbout = () => {
           </div>
         </div>
 
-        <div className="transition border rounded-xl mb-5">
+        <div data-aos="fade-right" data-aos-duration='1900' className="transition border rounded-xl mb-5">
 
           <button onClick={(e) => { accordionshow(e) }} className="accordion-header w-full cursor-pointer transition flex space-x-5 px-5 items-center h-16">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" className="size-6">
@@ -149,7 +170,7 @@ const SectionAbout = () => {
         </div>
 
 
-        <div className="transition border rounded-xl mb-5">
+        <div data-aos="fade-right" data-aos-duration='2000' className="transition border rounded-xl mb-5">
 
           <button onClick={(e) => { accordionshow(e) }} className="accordion-header w-full cursor-pointer transition flex space-x-5 px-5 items-center h-16">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" className="size-6">
@@ -166,7 +187,7 @@ const SectionAbout = () => {
         </div>
 
 
-        <div className="transition border rounded-xl ">
+        <div data-aos="fade-right" data-aos-duration='2100' className="transition border rounded-xl ">
 
           <button onClick={(e) => { accordionshow(e) }} className="accordion-header w-full cursor-pointer transition flex space-x-5 px-5 items-center h-16">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" className="size-6">

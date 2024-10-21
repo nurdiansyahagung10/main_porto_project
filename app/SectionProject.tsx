@@ -1,10 +1,11 @@
+import TextAos from "@/components/TextAos";
 import Image from "next/image";
 
 const SectionProject = () => {
   return (
     <>
       <div className="w-full mt-20 mb-10 flex justify-center">
-        <button className="py-1.5 items-center flex gap-1 bg-white border text-purple-600 shadow font-medium rounded-xl px-4">
+        <button data-aos='fade-up' data-aos-duration='1100' className="py-1.5 items-center flex gap-1 bg-white border text-purple-600 shadow font-medium rounded-xl px-4">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2.5" stroke="currentColor" className="size-4">
             <path strokeLinecap="round" strokeLinejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" />
           </svg>
@@ -13,15 +14,20 @@ const SectionProject = () => {
       </div>
 
       <div className="w-full flex flex-col mb-10 items-center text-center">
-        <h1 className="font-semibold lg:text-6xl md:text-5xl text-4xl mb-10">All Project Work</h1>
+        <div className="font-semibold inline-flex gap-3 lg:text-6xl md:text-5xl text-4xl mb-10">
+          <TextAos animate={'fade-up'} duration={'1200'} text={'All'} />
+          <TextAos animate={'fade-up'} duration={'1300'} text={'Project'} />
+          <TextAos animate={'fade-up'} duration={'1400'} text={'Work'} />
 
-        <p className="text-stone-600 pe-22 md:w-[75%] lg:w-[50%]">
-          Lets sneak a peek at the project where Ive transformed it into a new solution with my design approach.
-        </p>      </div>
+        </div>
+
+        <TextAos animate={'fade-up'} duration={'1400'} text={'Lets sneak a peek at the project where Ive transformed it into a new solution with my design approach.'} classname={'text-stone-600 pe-22 md:w-[75%] lg:w-[50%]'} />
+
+      </div>
 
       <div className="grid md:grid-cols-2 grid-cols-1">
         <div className="border-r border-b border-dashed rounded-br-xl md:rounded-none p-3 md:p-7">
-          <div className="border md:p-3 p-2 rounded-3xl">
+          <div data-aos="zoom-in" data-aos-duration='1500' className="border  md:p-3 p-2 rounded-3xl">
             <div className="bg-white w-full h-auto">
               <Image
                 src={'/header/profile/b1oysJMBAcwj6oXLrF6f191BmU.avif'}
@@ -35,8 +41,11 @@ const SectionProject = () => {
 
 
           <div className="mt-7 flex items-center justify-between">
-            <h1 className="text-lg font-medium">Website sistem</h1>
-            <button className="py-1.5 items-center flex gap-1 bg-white  border   font-medium rounded-xl px-4 " >
+            <h1 className="text-lg font-medium inline-flex gap-1">
+              <TextAos animate={'fade-up'} duration={'1600'} text={'Website'} />
+              <TextAos animate={'fade-up'} duration={'1700'} text={'sistem'} />
+            </h1>
+            <button data-aos="zoom-in-right" data-aos-duration='1800' className="py-1.5 items-center flex gap-1 bg-white  border   font-medium rounded-xl px-4 " >
               <div className="flex gap-2 items-center">
                 <span>
                   Go there
@@ -51,11 +60,12 @@ const SectionProject = () => {
 
           </div>
           <div className="mt-4">
-            <p className="text-stone-600 md:w-[70%]">We design Websites and Landing pages to meet any business solution and challenge.</p>
+            <TextAos animate={'fade-up'} duration={'1900'} text={'We design Websites and Landing pages to meet any business solution and challenge.'} classname={'text-stone-600 md:w-[70%]'} />
+
           </div>
         </div>
         <div className=" md:border-l-0 rounded-bl-xl md:rounded-none border-l border-b border-dashed p-3 md:p-7">
-          <div className="border md:p-3 p-2 rounded-3xl">
+          <div data-aos="zoom-in" data-aos-duration='1500' className="border md:p-3 p-2 rounded-3xl">
             <Image
               src={'/header/profile/b1oysJMBAcwj6oXLrF6f191BmU.avif'}
               alt=""
@@ -66,8 +76,11 @@ const SectionProject = () => {
 
           </div>
           <div className="mt-7 flex items-center justify-between">
-            <h1 className="text-lg font-medium">Website sistem</h1>
-            <button className="py-1.5 items-center flex gap-1 bg-white  border   font-medium rounded-xl px-4 " >
+            <h1 className="text-lg font-medium inline-flex gap-1">
+              <TextAos animate={'fade-up'} duration={'2000'} text={'Website'} />
+              <TextAos animate={'fade-up'} duration={'2100'} text={'sistem'} />
+            </h1>
+            <button data-aos="zoom-in-right" data-aos-duration='2200' className="py-1.5 items-center flex gap-1 bg-white  border   font-medium rounded-xl px-4 " >
               <div className="flex gap-2 items-center">
                 <span>
                   Go there
@@ -82,11 +95,11 @@ const SectionProject = () => {
 
           </div>
           <div className="mt-4">
-            <p className="text-stone-600 md:w-[70%]">We design Websites and Landing pages to meet any business solution and challenge.</p>
+            <TextAos animate={'fade-up'} duration={'2300'} text={'We design Websites and Landing pages to meet any business solution and challenge.'} classname={'text-stone-600 md:w-[70%]'} />
           </div>
         </div>
         <div className="border-r border-b md:border-b-0 rounded-br-xl md:rounded-none  border-dashed p-3 md:p-7">
-          <div className="border md:p-3 p-2 rounded-3xl">
+          <div data-aos="zoom-in" data-aos-duration='1500' className="border md:p-3 p-2 rounded-3xl" >
             <div className="bg-white w-full h-auto">
               <Image
                 src={'/header/profile/b1oysJMBAcwj6oXLrF6f191BmU.avif'}
@@ -100,8 +113,11 @@ const SectionProject = () => {
 
 
           <div className="mt-7 flex items-center justify-between">
-            <h1 className="text-lg font-medium">Website sistem</h1>
-            <button className="py-1.5 items-center flex gap-1 bg-white  border   font-medium rounded-xl px-4 " >
+            <h1 className="text-lg font-medium inline-flex gap-1">
+              <TextAos animate={'fade-up'} duration={'1600'} text={'Website'} />
+              <TextAos animate={'fade-up'} duration={'1700'} text={'sistem'} />
+            </h1>
+            <button data-aos="zoom-in-right" data-aos-duration='1800' className="py-1.5 items-center flex gap-1 bg-white  border   font-medium rounded-xl px-4 " >
               <div className="flex gap-2 items-center">
                 <span>
                   Go there
@@ -116,11 +132,12 @@ const SectionProject = () => {
 
           </div>
           <div className="mt-4">
-            <p className="text-stone-600 md:w-[70%]">We design Websites and Landing pages to meet any business solution and challenge.</p>
+            <TextAos animate={'fade-up'} duration={'1900'} text={'We design Websites and Landing pages to meet any business solution and challenge.'} classname={'text-stone-600 md:w-[70%]'} />
+
           </div>
         </div>
         <div className=" md:border-l-0 border-l  border-dashed p-3 md:p-7">
-          <div className="border md:p-3 p-2 rounded-3xl">
+          <div data-aos="zoom-in" data-aos-duration='1500' className="border md:p-3 p-2 rounded-3xl">
             <Image
               src={'/header/profile/b1oysJMBAcwj6oXLrF6f191BmU.avif'}
               alt=""
@@ -131,8 +148,11 @@ const SectionProject = () => {
 
           </div>
           <div className="mt-7 flex items-center justify-between">
-            <h1 className="text-lg font-medium">Website sistem</h1>
-            <button className="py-1.5 items-center flex gap-1 bg-white  border   font-medium rounded-xl px-4 " >
+            <h1 className="text-lg font-medium inline-flex gap-1">
+              <TextAos animate={'fade-up'} duration={'2000'} text={'Website'} />
+              <TextAos animate={'fade-up'} duration={'2100'} text={'sistem'} />
+            </h1>
+            <button data-aos="zoom-in-right" data-aos-duration='2200' className="py-1.5 items-center flex gap-1 bg-white  border   font-medium rounded-xl px-4 " >
               <div className="flex gap-2 items-center">
                 <span>
                   Go there
@@ -147,7 +167,7 @@ const SectionProject = () => {
 
           </div>
           <div className="mt-4">
-            <p className="text-stone-600 md:w-[70%]">We design Websites and Landing pages to meet any business solution and challenge.</p>
+            <TextAos animate={'fade-up'} duration={'2300'} text={'We design Websites and Landing pages to meet any business solution and challenge.'} classname={'text-stone-600 md:w-[70%]'} />
           </div>
         </div>
 
