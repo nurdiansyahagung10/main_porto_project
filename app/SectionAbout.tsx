@@ -5,7 +5,7 @@ const SectionAbout = () => {
   const accordionshow = (e: any) => {
     const header = e.currentTarget;
     const accordioncontent = header.parentElement.querySelector(".accordion-content");
-    let accordionmaxheight = accordioncontent.style.maxHeight;
+    const accordionmaxheight = accordioncontent.style.maxHeight;
     if (accordionmaxheight == "0px" || accordionmaxheight.length == 0) {
       accordioncontent.style.maxHeight = `${accordioncontent.scrollHeight + 32}px`;
     } else {
