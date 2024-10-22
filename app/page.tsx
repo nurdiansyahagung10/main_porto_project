@@ -62,16 +62,16 @@ export default function Home() {
         <div className="items-center flex justify-center">
           <div className="md:block hidden">
             <ul className={`inline-flex w-[24.6rem] transition-all duration-500 overflow-hidden p-1 gap-3 text-white items-center  bg-black rounded-full shadow-lg  ${scroll >= 88 ? '!w-[calc(100%-0.1px)] ' : ''} `}>
-              <a href="#about" className={` ${scroll >= 900 && scroll <= 2100 ? 'bg-stone-700 ' : ''} font-medium transition-all duration-500  rounded-full p-1.5 px-3`} data-aos="fade-up" data-aos-duration="1000" ><li>
+              <a href="#about" className={` ${scroll >= 900 && scroll <= 2100 ? 'bg-stone-700 ' : ''} font-medium transition-all duration-500  rounded-full p-1.5 px-3`} data-aos="fade-up" data-aos-once='true' data-aos-duration="1000" ><li>
                 About
               </li></a>
-              <a href="#project" className={` ${scroll >= 2100 && scroll <= 3500 ? 'bg-stone-700 ' : ''} font-medium transition-all duration-500  rounded-full p-1.5 px-3`} data-aos="fade-up" data-aos-duration="1250" ><li>
+              <a href="#project" className={` ${scroll >= 2100 && scroll <= 3500 ? 'bg-stone-700 ' : ''} font-medium transition-all duration-500  rounded-full p-1.5 px-3`} data-aos="fade-up" data-aos-once='true' data-aos-duration="1250" ><li>
                 Project
               </li></a>
-              <a href="#timeline" className={` ${scroll >= 3500 && scroll <= 4800 ? 'bg-stone-700 ' : ''} font-medium transition-all duration-500  rounded-full p-1.5 px-3`} data-aos="fade-up" data-aos-duration="1500" ><li>
+              <a href="#timeline" className={` ${scroll >= 3500 && scroll <= 4800 ? 'bg-stone-700 ' : ''} font-medium transition-all duration-500  rounded-full p-1.5 px-3`} data-aos="fade-up" data-aos-once='true' data-aos-duration="1500" ><li>
                 Timeline
               </li></a>
-              <a href="#capability" className={` ${scroll >= 4800 && scroll <= 5300 ? 'bg-stone-700 ' : ''} font-medium transition-all duration-500  rounded-full p-1.5 px-3`} data-aos="fade-up" data-aos-duration="1750" ><li>
+              <a href="#capability" className={` ${scroll >= 4800 && scroll <= 5300 ? 'bg-stone-700 ' : ''} font-medium transition-all duration-500  rounded-full p-1.5 px-3`} data-aos="fade-up" data-aos-once='true' data-aos-duration="1750" ><li>
                 Capability
               </li></a>
               <a href="#contact" className={"border flex items-center overflow-hidden gap-2 border-neutral-600 font-medium rounded-full p-1.5 px-3 "}>
@@ -87,15 +87,15 @@ export default function Home() {
       </nav>
 
       <nav className="  md:hidden px-3 container mx-auto sticky top-0 pt-3  z-20">
-        <div id="nav"  className=" overflow-hidden items-center transition-shadow duration-300  w-full shadow-lg  rounded-xl border  px-4  h-auto  py-3  bg-white flex justify-between">
-          <a href=""  className="font-medium text-lg ">
-            <TextAos animate={'fade-right'} duration={'1000'} text={'Yasyean'} />
+        <div id="nav" className=" overflow-hidden items-center transition-shadow duration-300  w-full shadow-lg  rounded-xl border  px-4  h-auto  py-3  bg-white flex justify-between">
+          <a href="" className="font-medium text-lg ">
+            <TextAos animate={'fade-right'} once={'true'} duration={'1000'} text={'Yasyean'} />
           </a>
 
-          <button  onClick={navshow} className="w-[28px] h-[20px] relative cursor-pointer inline-block">
-            <div data-aos="fade-up" data-aos-duration="1200" className="rounded-full bg-black w-full h-[3px]   absolute top-0 left-0 qubic" ></div>
-            <div data-aos="fade-up" data-aos-duration="1400" className="rounded-full bg-black w-full h-[3px]   absolute top-[8px] left-0 placeholder-opacity-100" ></div>
-            <div data-aos="fade-up" data-aos-duration="1600" className="rounded-full bg-black w-full h-[3px]   absolute bottom-0 left-0" ></div>
+          <button onClick={navshow} className="w-[28px] h-[20px] relative cursor-pointer inline-block">
+            <TextAos animate={'fade-up'} once={'true'} duration={'1200'} text={''} classname="rounded-full bg-black w-full h-[3px]   absolute top-0 left-0" />
+            <TextAos animate={'fade-up'} once={'true'} duration={'1400'} text={''} classname="rounded-full bg-black w-full h-[3px]   absolute top-[8px] left-0 placeholder-opacity-100" />
+            <TextAos animate={'fade-up'} once={'true'} duration={'1600'} text={''} classname="rounded-full bg-black w-full h-[3px]   absolute bottom-0 left-0"/>
           </button>
         </div>
       </nav>
@@ -170,7 +170,7 @@ export default function Home() {
         <header className="md:mb-14 mb-12">
           <nav className=" hidden md:block relative pt-0.5 z-20">
             <div className="items-center w-full  rounded-xl md:border-none border px-0  h-auto  py-3  bg-transparent  flex justify-between">
-              <a href="" data-aos="fade-right" data-aos-duration="1000"  className="font-medium text-lg ">
+              <a href="" data-aos="fade-right" data-aos-duration="1000" className="font-medium text-lg ">
                 Yasyean
               </a>
 
@@ -181,7 +181,7 @@ export default function Home() {
           </nav>
 
           {/* header section */}
-          <SectionHeader  />
+          <SectionHeader />
 
         </header>
 
