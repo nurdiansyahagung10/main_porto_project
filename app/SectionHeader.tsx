@@ -5,7 +5,7 @@ const SectionHeader = () => {
         <div className=" relative">
             <div className="  py-3 pb-4  mt-10 flex flex-col gap-3">
                 <h2 className="inline-flex flex-wrap gap-1 md:text-xl sm:text-lg font-medium">
-                    <TextAos animate={'fade-up'} duration={'1000'} text={'—Hello'} />
+                    <TextAos animate={'fade-up'} duration={'1000'} text={'—Hi'} />
                     <TextAos animate={'fade-up'} duration={'1100'} text={'Iam'} />
                     <TextAos animate={'fade-up'} duration={'1200'} text={'Agung'} />
                     <TextAos animate={'fade-up'} duration={'1300'} text={'nurdiansyah'} />

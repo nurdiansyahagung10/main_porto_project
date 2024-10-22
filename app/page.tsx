@@ -10,6 +10,7 @@ import SectionContactUs from "./SectionContactUs";
 import SectionFooter from "./SectionFooter";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import TextAos from "@/components/TextAos";
 
 
 export default function Home() {
@@ -85,16 +86,16 @@ export default function Home() {
         </div>
       </nav>
 
-      <nav className=" md:hidden px-3 container mx-auto sticky top-0 pt-3  z-20">
-        <div id="nav" className="items-center transition-shadow duration-300  w-full shadow-lg  rounded-xl border  px-4  h-auto  py-3  bg-white flex justify-between">
-          <a href="" className="font-medium text-lg ">
-            Yasyean
+      <nav className="  md:hidden px-3 container mx-auto sticky top-0 pt-3  z-20">
+        <div id="nav"  className=" overflow-hidden items-center transition-shadow duration-300  w-full shadow-lg  rounded-xl border  px-4  h-auto  py-3  bg-white flex justify-between">
+          <a href=""  className="font-medium text-lg ">
+            <TextAos animate={'fade-right'} duration={'1000'} text={'Yasyean'} />
           </a>
 
-          <button onClick={navshow} className="w-[28px] h-[20px] relative cursor-pointer inline-block">
-            <span className="rounded-full bg-black w-full h-[3px] duration-500  absolute top-0 left-0 qubic" style={{ transition: ' .3s cubic-bezier(.8, .5, .2, 1.4)' }}></span>
-            <span className="rounded-full bg-black w-full h-[3px] duration-500  absolute top-[8px] left-0 placeholder-opacity-100" style={{ transition: ' .3s cubic-bezier(.8, .5, .2, 1.4)' }}></span>
-            <span className="rounded-full bg-black w-full h-[3px] duration-500  absolute bottom-0 left-0" style={{ transition: ' .3s cubic-bezier(.8, .5, .2, 1.4)' }}></span>
+          <button  onClick={navshow} className="w-[28px] h-[20px] relative cursor-pointer inline-block">
+            <div data-aos="fade-up" data-aos-duration="1200" className="rounded-full bg-black w-full h-[3px]   absolute top-0 left-0 qubic" ></div>
+            <div data-aos="fade-up" data-aos-duration="1400" className="rounded-full bg-black w-full h-[3px]   absolute top-[8px] left-0 placeholder-opacity-100" ></div>
+            <div data-aos="fade-up" data-aos-duration="1600" className="rounded-full bg-black w-full h-[3px]   absolute bottom-0 left-0" ></div>
           </button>
         </div>
       </nav>
